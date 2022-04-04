@@ -4,7 +4,6 @@ import Head from "next/head";
 
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import { GetStaticProps } from "next";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
