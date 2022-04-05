@@ -12,7 +12,7 @@ const Navbar = () => {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/experience") setActiveItem("Experience");
     if (pathname === "/github") setActiveItem("Github");
-  }, []);
+  }, [pathname]);
 
   const onClickHandler = (event: MouseEvent<HTMLSpanElement>) => {
     const target = event.target as HTMLElement;
@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between px-5 py-3 my-3 md:px-20 lg:px-5">
       <div>
-        <span className="font-mono text-xl font-extrabold text-blue-300 border-b-4 hover:border-blue-300 md:text-2xl">
+        <span className="font-mono text-xl font-extrabold text-blue-300 border-b-4 border-blue-300 hover:border-blue-300 md:text-2xl">
           {activeItem}
         </span>
       </div>
