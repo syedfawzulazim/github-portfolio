@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between px-5 py-3 my-3 md:px-20 lg:px-5">
       <div>
-        <span className="font-mono text-xl font-extrabold text-green-700 border-b-4 border-cyan-800 md:text-2xl">
+        <span className="font-mono text-xl font-extrabold text-blue-300 border-b-4 hover:border-blue-300 md:text-2xl">
           {activeItem}
         </span>
       </div>
@@ -44,7 +44,10 @@ const Navbar = () => {
         {activeItem !== "About" && (
           <Link href="/">
             <a>
-              <span onClick={onClickHandler} className="hover:text-green-600">
+              <span
+                onClick={onClickHandler}
+                className="border-b-2 border-gray-500 hover:text-blue-300"
+              >
                 About
               </span>
             </a>
@@ -53,7 +56,10 @@ const Navbar = () => {
         {activeItem !== "Experience" && (
           <Link href="/experience">
             <a>
-              <span onClick={onClickHandler} className="hover:text-green-600">
+              <span
+                onClick={onClickHandler}
+                className="border-b-2 border-gray-500 hover:text-blue-300 hover:border-blue-300"
+              >
                 Experience
               </span>
             </a>
@@ -62,7 +68,10 @@ const Navbar = () => {
         {activeItem !== "Github" && (
           <Link href="/github">
             <a>
-              <span onClick={onClickHandler} className="hover:text-green-600">
+              <span
+                onClick={onClickHandler}
+                className="border-b-2 border-gray-500 hover:text-blue-300 hover:border-blue-300"
+              >
                 Github
               </span>
             </a>

@@ -10,7 +10,7 @@ const ServiceCard: FC<{ service: Service }> = ({
     };
   };
   return (
-    <div className="flex items-center p-2 space-x-4 bg-gray-50">
+    <div className="flex items-center p-3 space-x-4 text-white bg-gray-800 rounded-md">
       <Icon className="w-12 h-12" />
       <div className="mb-2">
         <h4 className="font-bold">{title}</h4>
