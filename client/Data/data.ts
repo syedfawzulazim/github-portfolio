@@ -11,91 +11,84 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b> CSS</b>   and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "Handle database, server, api using <b>Express </b> & other popular frameworks",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+    about: "I can develop robust  REST API using <b>Node API</b> ",
   },
   {
     Icon: MdDeveloperMode,
     title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    about: "A daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
   },
   {
     Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
+    title: "UI/UX Designer",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "Stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
   },
   {
     Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    title: "Dedication",
+    about: "Dedicated for learning new technologies and delivering the best",
   },
 ];
 
-export const languages: Skill[] = [
+export const techologies: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
+    name: "React & Redux",
+    level: "85",
   },
   {
     Icon: BsCircleFill,
-    name: "Java Script",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React Native",
+    name: "NextJs",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "React",
+    name: "TypeScript",
+    level: "78",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "NodeJs",
     level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Bootstrap",
-    level: "80",
+    name: "MongoDB",
+    level: "75",
   },
 ];
 
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Figma",
+    name: "Git & Github",
+    level: "90",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "RestAPI & GraphQL",
     level: "85",
   },
   {
     Icon: BsCircleFill,
-    name: "Photoshop",
-    level: "45",
+    name: "SASS Tailwind",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
+    name: "Docker",
+    level: "75",
   },
 ];
