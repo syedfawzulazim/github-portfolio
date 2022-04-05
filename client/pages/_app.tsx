@@ -14,10 +14,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="grid min-h-screen grid-cols-12 gap-6 px-5 py-12 bg-gradient-to-r from-gray-900 to-blue-900 lg:px-20 md:px-24">
-        <div className="col-span-12 p-4 text-center bg-white lg:col-span-4 xl:col-span-3 rounded-2xl">
+        <div className="col-span-12 p-4 text-center text-white bg-gray-900 lg:col-span-4 xl:col-span-3 rounded-2xl">
           <Sidebar />
         </div>
-        <div className="flex flex-col col-span-12 bg-white lg:col-span-8 xl:col-span-9 rounded-2xl">
+        <div className="flex flex-col col-span-12 text-white bg-gray-900 lg:col-span-8 xl:col-span-9 rounded-2xl">
           <Navbar />
           <Component {...pageProps} />
         </div>

@@ -1,8 +1,27 @@
-import type { GetServerSidePropsContext, NextPage } from "next";
+import type { NextPage } from "next";
 import ServiceCard from "../components/ServiceCard";
+import { motion } from "framer-motion";
+import { services } from "../data/data";
 
-import { services } from "../Data/data";
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 60,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
+const stagger = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col flex-grow px-2 pt-1 md:px-20 lg:px-4 ">
@@ -13,14 +32,19 @@ const Home: NextPage = () => {
         Similique totam accusantium saepe libero dolorum!
       </h5>
       <div className="flex-grow p-1 pb-3 mt-5 ">
-        <h6 className="font-bold">What I offer</h6>
-        <div className="grid gap-6 p-2 bg-gray-200 lg:grid-cols-2">
-          {services.map((service) => (
-            <div className="">
+        <h6 className="font-bold">What I Offer</h6>
+        <motion.div
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+          className="grid gap-6 p-2 bg-gray-900 lg:grid-cols-2 "
+        >
+          {services.map((service, index) => (
+            <motion.div key={index} variants={variants}>
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
