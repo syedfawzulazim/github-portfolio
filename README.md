@@ -1,5 +1,5 @@
 # Github Portfolio
-This is a Github Portfolio site, which fetches all the necessary data from my github account using GraphQL and NextJs for client site.
+This is a Github Portfolio site, which fetches all the necessary data from my github account using GraphQL and NextJs is used for client-site.
 
 ## Ingredients: 
   - React
