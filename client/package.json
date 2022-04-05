@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "framer-motion": "^6.2.8",
+    "graphql": "^16.3.0",
+    "i": "^0.3.7",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
